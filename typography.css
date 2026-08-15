@@ -141,6 +141,19 @@
   border-top: 1px solid var(--ink);
 }
 
+.final-total {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.final-total del {
+  color: var(--muted);
+  font-size: 13px;
+  letter-spacing: -0.02em;
+  text-decoration-thickness: 1px;
+}
+
 .subtotal-line > strong {
   font-size: 15px;
 }
