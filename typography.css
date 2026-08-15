@@ -500,3 +500,202 @@
     gap: 14px;
   }
 }
+
+@media (max-width: 420px) {
+  body,
+  main,
+  .scene,
+  .scene-inner,
+  .detail-section,
+  .detail-section > div,
+  .dialog-shell {
+    max-width: 100%;
+  }
+
+  .scene {
+    overflow-x: clip;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .hero-copy {
+    width: calc(100% - 36px);
+  }
+
+  .scene h2,
+  .detail-hero h2,
+  .offer-card h3,
+  .price-grid h3,
+  .bonus-grid h3,
+  .maps-card p,
+  .profile-question strong,
+  .flexibility-note,
+  .center-note {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .scene h2,
+  .scene--final h2 {
+    font-size: clamp(31px, 9.6vw, 40px);
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(44px, 14vw, 54px);
+  }
+
+  .hero-intro {
+    font-size: 17px;
+  }
+
+  .statement {
+    font-size: clamp(22px, 7vw, 29px);
+  }
+
+  .offer-card,
+  .price-grid > article,
+  .bonus-grid > article,
+  .estimate-grid > article,
+  .tech-grid article {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .tr {
+    grid-template-columns: minmax(0, 1fr) 54px 54px;
+    font-size: 10px;
+  }
+
+  .tr > span {
+    min-width: 0;
+    padding: 7px 5px 7px 0;
+    overflow-wrap: anywhere;
+  }
+
+  .compare-summary p,
+  .line p,
+  .additional-price b,
+  .support-breakdown b {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .line {
+    gap: 10px;
+  }
+
+  .line > strong,
+  .gift-line > strong {
+    max-width: 116px;
+    flex: 0 0 auto;
+    font-size: 12px;
+  }
+
+  .gift-line > strong em {
+    font-size: 7px;
+  }
+
+  .estimate-grid footer {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .final-total {
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .estimate-grid footer b {
+    font-size: 24px;
+    white-space: nowrap;
+  }
+
+  .additional-price {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .additional-price strong {
+    white-space: nowrap;
+  }
+
+  .button,
+  .discuss--primary .button {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.35;
+  }
+
+  .detail-hero,
+  .detail-section {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .detail-hero h2 {
+    font-size: clamp(32px, 9.5vw, 40px);
+  }
+
+  .wireframe-wrap {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .browser,
+  .browser.mobile {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .flow-steps,
+  .benefit-grid,
+  .motion-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .pdf-sheet {
+    padding: 26px 18px;
+  }
+
+  .pdf-sheet .pdf-line {
+    gap: 10px;
+  }
+
+  .pdf-sheet .pdf-line b {
+    min-width: 0;
+    text-align: right;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 350px) {
+  .topbar {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .brand {
+    letter-spacing: 0.12em;
+  }
+
+  .scene {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  .hero-copy {
+    width: calc(100% - 28px);
+  }
+
+  .scene h2,
+  .scene--final h2 {
+    font-size: 29px;
+  }
+
+  .tr {
+    grid-template-columns: minmax(0, 1fr) 45px 45px;
+    font-size: 9px;
+  }
+}
